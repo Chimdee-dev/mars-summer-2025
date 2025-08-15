@@ -1,0 +1,185 @@
+.table1 {
+    padding: 1px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr,th {
+    padding: 7px 10px auto;
+    text-align: center;
+}
+.table2{
+    margin: 0 auto;
+    background-color: #FBFFDC;
+    border-collapse: collapse;
+}
+.time{
+    text-transform: uppercase;
+    padding: 5px;
+}
+.one {
+    text-transform: uppercase;
+    padding: 5px;
+    letter-spacing: 0.1rem;
+}
+.table3{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+.book {
+    padding: 5px;
+    border-bottom: 2px solid #AAC8A7;
+
+}
+.name {
+    text-align: left;
+}
+.table4 {
+    background-color: none;
+    border-collapse: collapse;
+    margin: auto;
+}
+.time{
+    border-bottom: 2px solid #F7C8E0;
+    border-top: 1px solid #FFDEB4 ;
+}
+.odd {
+    background-color:#FAF3F0 ;
+}
+.even {
+    background-color:#F8E8EE ;
+}
+.table5 {
+    border-bottom: #0b643f;
+    border-collapse: collapse;
+    padding: 7px 10px 10px 20px;
+    box-shadow:-20px 30px 30px#d9d9d9;
+    margin: auto;
+    border-bottom: 2px solid #029457;
+    font-family: sans-serif;
+}
+.Rank {
+    border: none;
+    background-color: #029457;
+    color: white;
+    padding: 20px ;
+    text-align: left;
+}
+.dcode {
+    border: 0 ;
+    text-align: left;
+}
+.stu {
+    background-color: #d9d9d9; 
+    color: #029457;
+    text-align: left;
+
+}
+.dcode1 {
+    border-bottom: 1px #029457;
+    text-align: left;
+}
+.table5 td,th{
+    padding: 15px;
+}
+.table6 td{
+    border: 1px solid rgb(193, 247, 15);
+    width: 50px;
+    height: 50px;
+}
+.table6{
+    background-color: darkcyan ;
+    empty-cells: hide;
+}
+.table7 td{
+    border: 1px solid rgb(193, 247, 15);
+    width: 50px;
+    height: 50px;
+}
+.table7 {
+    background-color: darkcyan;
+}
+.table7 td:hover {
+    background-color: #fbff8a;
+}
+.table8{
+    border-spacing: 15px;
+}
+.dasgal8 {
+    background-image: url(../images/star.png);
+    width: 100px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid #F7C8E0;
+}
+.dasgal9 {
+    background-image: url(../images/correct.png);
+    width: 100px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid #F7C8E0;
+}
+.dasgal10 {
+    background-image: url(../images/cutlery.png);
+    width: 100px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid #F7C8E0;
+    
+}
+.dasgal11 {
+    background-image: url(../images/star.png);
+    width: 100px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid #F7C8E0;
+}
+.table9{
+    border-spacing: 15px;
+    border-collapse: collapse;
+}
+.dasgal8 {
+    background-image: url(../images/star.png);
+    width: 100px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.dasgal9 {
+    background-image: url(../images/correct.png);
+    width: 100px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.dasgal10 {
+    background-image: url(../images/cutlery.png);
+    width: 100px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+    
+}
+.dasgal11 {
+    background-image: url(../images/star.png);
+    width: 100px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}

@@ -1,0 +1,130 @@
+body {
+    background-color: #EEE;
+    position: relative;
+    margin: 0%;
+    max-width: 1900px;
+
+}
+
+@media(max-width:600px) {
+    main .header {
+        display: flex;
+        flex-direction: row;
+        width: 402px;
+        height: 70px;
+        border-radius: 41px;
+        position: fixed;
+        bottom: 20px;
+        left: 10%;
+    }
+
+    .img1 {
+        width: 0;
+        height: 0;
+    }
+
+    main .pro {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        left: 30%;
+        font-size: 44px;
+    }
+
+    main .projects1 img {
+        width: 164px;
+        height: 124px;
+        /* position: fixed;
+        left: 25%;
+        bottom: 10%; */
+    }
+
+    main .projects1 {
+        width: 400px;
+        height: 124px;
+        position: fixed;
+        left: 10%;
+        bottom: 5%;
+    }
+    .projects1 .divs {
+        width: 164px;
+        height: 124px;
+    }
+
+
+
+
+
+}
+
+.header {
+    background-color: black;
+    width: 96px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.img1 {
+    position: absolute;
+    top: 92%;
+}
+
+.pro {
+    color: #000;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-family: Cairo;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@font-face {
+    font-family: Cairo;
+    src: url(../fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: Hubballi;
+    src: url(../fonts/Hubballi/Hubballi-Regular.ttf);
+}
+
+.projects1 {
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    top: 20%;
+    left: 18%;
+    gap: 50px 50px;
+
+}
+
+
+
+.divs {
+    box-shadow: 25px 20px 0px 0px black;
+    border-radius: 20px;
+    width: 394px;
+    box-sizing: border-box;
+}
+
+.divs :hover {
+    transform: scale(0.8);
+    transition-timing-function: ease-in-out;
+    border-radius: 50%;
+}

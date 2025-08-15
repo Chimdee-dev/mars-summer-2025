@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="todo-app-container">
+        <h1 class="app-title" >Todo List App</h1>
+        <p class="current-date" id="current-date"></p>
+
+        <div class="input-section">
+            <input type="text" id="todo-input" placeholder="Таскын нэр оруулна уу..." >
+            <button id="add-task-btn" >Нэмэх</button>
+        </div>
+        <h2 class="list-title">Жагсаалт</h2>
+        <ul id="task-list"></ul>
+
+        <div class="summary-section">
+            <p>Нийт таск: <span id="total-tasks">0</span></p>
+            <p>Дууссан таск: <span id="completed-tasks">0</span></p>
+        </div>
+    </div>
+    <script src="script-ls.js" ></script>
+</body>
+</html>
+

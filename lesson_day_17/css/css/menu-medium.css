@@ -1,0 +1,14 @@
+@media (max-width: 600px){
+    a {
+        float: none;
+    }
+    .column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 600px){
+    .column{
+        width:50% ;
+    }
+}

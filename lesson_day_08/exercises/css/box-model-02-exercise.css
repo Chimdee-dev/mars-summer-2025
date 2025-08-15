@@ -1,0 +1,113 @@
+.Ex1{
+    width: 400px;
+    height: 200px;
+    border-top: 2px solid red;
+    border-left: 2px solid orange;
+    border-right: 2px dashed green;
+    border-bottom: 2px dotted purple;
+}
+.Ex2{
+    border-radius: 50px;
+    border: 5px solid black ;
+    width: 400px;
+    height: 200px;
+}
+.Ex3 .box1{
+    width: 500px;
+    height: 30px;
+    background-color: aquamarine;
+    margin: 20px;
+    padding: 10px;
+}
+.Ex3 .box2{
+    width: 500px;
+    height: 30px;
+    background-color: rgb(129, 152, 144);
+    margin: 10px;
+    padding: 20px;
+}
+.Ex4{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 141, 141);
+    padding: 20px;
+}
+.box3{
+    width: 500px;
+    height: 30px;
+    background-color: rgb(129, 152, 144);
+    margin: 10px;
+    padding: 20px;
+    
+}
+.box4{
+    width: 500px;
+    height: 30px;
+    background-color: rgb(129, 152, 144);
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.Ex6{
+    width: 400px;
+    height: 250px;
+    background-color: rgb(123, 229, 123);
+    text-align: center;
+}
+.Ex6-1{
+    width: 350px;
+    height: 200px;
+    background-color: lightblue;
+    margin-top: 10px;
+    margin-left: 300px;
+}
+.Ex7 {
+    background-color: lightgreen;
+    padding: 100px;
+    text-align: center;
+}
+.Ex8 div{
+    width: 400px;
+    height: 20px;
+    background-color: pink;
+    margin: 30px;
+}
+.Ex9 {
+    width: 400px;
+    height: 100px;
+    border: 10px dashed grey;
+    background-color: blue;
+}
+.box5 {
+    width: 300px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.Ex10 {
+    background-color: rgb(103, 103, 255);
+    width: 500px;
+    height: 150px;
+    align-items: center;
+    
+}
+.box6 {
+    width: 380px;
+    height: 40px;
+    background-color: lightgreen;
+    border: 1px solid black;
+    margin: auto;
+    padding: 10px;
+}
+.box7 {
+    width: 350px;
+    height: 40px;
+    background-color: lightgreen;
+    border: 1px dotted black;
+    margin: auto;
+    padding: 10px;
+}

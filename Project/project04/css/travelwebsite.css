@@ -1,0 +1,885 @@
+body {
+    width: 100%;
+    height: 1117px;
+    background-color: #ffffff;
+    padding: 0px 40px 0px;
+    /* position: relative; */
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 84px;
+    height: 75px;
+    flex-shrink: 0;
+
+}
+
+nav h2 {
+    color: #000;
+    font-family: Aclonica;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 5px;
+    left: 150px;
+}
+
+nav ul {
+    display: flex;
+    /* position: absolute;
+    top: 20px;
+    left: 300px; */
+    text-decoration: none;
+    gap: 60px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+nav ul li a {
+
+    width: 131px;
+    color: #000;
+    font-family:Inter ;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    text-decoration: none;
+    color: black;
+}
+
+.btn1 {
+    /* position: absolute;
+    top: -15px;
+    right: -93%; */
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 19px 50px 19px 46px;
+    align-items: center;
+    border-radius: 50px;
+    background: #E1E3E1;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.agaariin {
+    width: full;
+}
+
+.agaariin img {
+    width: 100%;
+    height: 502px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    margin: auto;
+
+}
+
+@font-face {
+    font-family: Jura;
+    src: url(../fonts/Jura/Jura-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/Jura/static/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Aclonica;
+    src: url(../fonts/Jura/Aclonica/Aclonica-Regular.ttf);
+}
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Jura/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+    font-family: Koho;
+    src: url(../fonts/Jura/KoHo-Regular.ttf);
+}
+
+.agaariin h1 {
+    color: #ffffff;
+    font-family: Jura;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    position: absolute;
+    top: 50px;
+    left: 770px;
+}
+
+.agaariin p {
+    color: #ffffff;
+    font-family: KoHo;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    position: absolute;
+    top: 200px;
+    left: 900px;
+}
+
+.roll1 {
+    width: 146px;
+    height: 146px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: #ffffff;
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    margin: 221px 748px 105px 700px;
+}
+
+.roll2 {
+    width: 116px;
+    height: 116px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: #ffffff;
+    position: absolute;
+    top: 110px;
+    left: 365px;
+    margin: 225px 700px 105px 700px;
+}
+
+.roll3 {
+    position: absolute;
+    top: 140px;
+    left: 400px;
+    margin: 225px 700px 105px 700px;
+    width: 62px;
+    height: 62px;
+    fill: #FFF;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.25));
+}
+
+.rectangle {
+    width: 1500px;
+    height: 157px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.68);
+    box-shadow: 1px 4px 80.2px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4.199999809265137px);
+    position: absolute;
+    top: 45%;
+    left: 15%;
+}
+
+.rectangle :nth-child(1) {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    width: 144px;
+    color: #000;
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.rectangle :nth-child(2) {
+    position: absolute;
+    top: 48%;
+    left: 5%;
+    color: rgba(0, 0, 0, 0.40);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 24px */
+}
+
+.rectangle :nth-child(3) {
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    transform: rotate(90deg);
+}
+
+.rectangle :nth-child(4) {
+    position: absolute;
+    top: 10%;
+    left: 26%;
+    width: 1px;
+    height: 96.021px;
+    background: rgba(0, 0, 0, 0.40);
+}
+
+.rectangle :nth-child(5) {
+    position: absolute;
+    top: 8%;
+    left: 30%;
+    width: 144px;
+    color: #000;
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.rectangle :nth-child(6) {
+    position: absolute;
+    top: 48%;
+    left: 30%;
+    color: rgba(0, 0, 0, 0.40);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 24px */
+}
+
+.rectangle :nth-child(7) {
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    transform: rotate(90deg);
+}
+
+.rectangle :nth-child(8) {
+    position: absolute;
+    top: 10%;
+    left: 46%;
+    width: 1px;
+    height: 96.021px;
+    background: rgba(0, 0, 0, 0.40);
+}
+
+.rectangle :nth-child(9) {
+    position: absolute;
+    top: 8%;
+    left: 53%;
+    width: 144px;
+    color: #000;
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.rectangle :nth-child(10) {
+    position: absolute;
+    top: 48%;
+    left: 54%;
+    color: rgba(0, 0, 0, 0.40);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.rectangle :nth-child(11) {
+    position: absolute;
+    top: 30%;
+    left: 63%;
+    transform: rotate(90deg);
+}
+
+.rectangle :nth-child(12) {
+    position: absolute;
+    top: 20%;
+    left: 73%;
+    width: 241px;
+    height: 88px;
+}
+
+.rectangle :nth-child(13) {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.5px;
+}
+
+.rectangle :nth-child(14) {
+    position: absolute;
+    top: 30%;
+    left: 75%;
+}
+
+section {
+    display: flex;
+    margin-top: 200px;
+    justify-content: space-evenly;
+}
+
+.Package {
+    width: 366px;
+    height: 366px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 2px 3px 40px 0px rgba(200, 200, 200, 0.15), -4px -4px 39.3px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
+    /* margin: 5% 0; */
+}
+
+.Package :nth-child(1) {
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    top: 10px;
+    left: 80px;
+}
+
+.Package :nth-child(2) {
+    width: 306px;
+    height: 57px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #BFF2FF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    text-align: center;
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+}
+
+.Package :nth-child(3) {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    text-align: center;
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.Package :nth-child(3) {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+}
+
+.Package :nth-child(4) {
+    position: absolute;
+    top: 85px;
+    left: 240px;
+    width: 101px;
+    height: 57px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: -1px 2px 10.8px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+.Package :nth-child(5) {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 30px */
+}
+
+.Package :nth-child(6) {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    color: rgba(0, 0, 0, 0.60);
+    width: 250px;
+}
+
+.Package :nth-child(7) {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.Package :nth-child(8) {
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    color: rgba(0, 0, 0, 0.60);
+    width: 250px;
+}
+
+.Package :nth-child(9) {
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.erhcholoo {
+    width: 549px;
+    height: 173px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.68);
+    box-shadow: 1px 4px 80.2px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4.199999809265137px);
+    position: relative;
+    /* margin: -21% 25%; */
+}
+
+.erhcholoo :nth-child(1) {
+    border-radius: 40px;
+    box-shadow: 1px 4px 80.2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.erhcholoo :nth-child(2) {
+    position: relative;
+    top: -98%;
+    left: 60%;
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.erhcholoo :nth-child(3) {
+    position: relative;
+    bottom: 105%;
+    left: 60%;
+}
+
+.erhcholoo :nth-child(4) {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    bottom: 130%;
+    left: 65%;
+}
+
+.erhcholoo :nth-child(5) {
+    width: 169px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 1px 9px 9.2px 0px rgba(155, 155, 155, 0.20), 0px -1px 12.4px 0px rgba(0, 0, 0, 0.20);
+    position: relative;
+    bottom: 135%;
+    left: 60%;
+}
+
+.erhcholoo :nth-child(6) {
+    position: relative;
+    bottom: 165%;
+    left: 65%;
+}
+
+.erhcholoo :nth-child(7) {
+    position: relative;
+    bottom: 190%;
+    left: 73%;
+    color: #000;
+    font-family: Actor;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Bangladesh {
+    width: 549px;
+    height: 173px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.68);
+    box-shadow: 1px 4px 80.2px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4.199999809265137px);
+    position: relative;
+    /* margin: 22% 25%; */
+}
+
+.Bangladesh :nth-child(7) {
+    border-radius: 40px;
+    box-shadow: 1px 4px 80.2px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+}
+
+.Bangladesh :nth-child(1) {
+    position: absolute;
+    top: 10%;
+    left: 13%;
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Bangladesh :nth-child(2) {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+}
+
+.Bangladesh :nth-child(3) {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Bangladesh :nth-child(4) {
+    width: 169px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 1px 9px 9.2px 0px rgba(155, 155, 155, 0.20), 0px -1px 12.4px 0px rgba(0, 0, 0, 0.20);
+    position: relative;
+    top: 65%;
+    left: 10%;
+}
+
+.Bangladesh :nth-child(5) {
+    position: relative;
+    top: 35%;
+    left: 15%;
+}
+
+.Bangladesh :nth-child(6) {
+    position: relative;
+    top: 10%;
+    left: 23%;
+    color: #000;
+    font-family: Actor;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Dubai1 {
+    width: 321px;
+    height: 416px;
+    background-image: url("../images/pexels-jondave-libiran-2405640 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.top {
+    width: 106px;
+    height: 46px;
+    border-radius: 30px;
+    background: rgba(217, 217, 217, 0.70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.top img {
+    width: 20px;
+    height: 20px;
+}
+
+.bottom {
+    width: 286px;
+    height: 102px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(217, 217, 217, 0.70);
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.my-stars {
+    margin-top: 10px;
+}
+
+.book-now {
+    display: flex;
+}
+
+.Nepal1 {
+    width: 321px;
+    height: 416px;
+    background-image: url("../images/pokhara-nepal-boats-colorful-boats\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+}
+
+.Dubai :nth-child(2) {
+    width: 321px;
+    height: 416px;
+    flex-shrink: 0;
+    border-radius: 30px;
+}
+
+.Dubai :nth-child(3) {
+    position: absolute;
+    top: 5.5%;
+    left: 70%;
+    z-index: 1000;
+}
+
+.Dubai :nth-child(4) {
+    position: absolute;
+    top: 0%;
+    left: 65%;
+    width: 106px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(217, 217, 217, 0.70);
+}
+
+.Dubai :nth-child(5) {
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 21.6px */
+    position: absolute;
+    top: 2%;
+    left: 78%;
+    z-index: 1000;
+}
+
+.Dubai :nth-child(6) {
+    width: 286px;
+    height: 102px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(217, 217, 217, 0.70);
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+}
+
+.Dubai :nth-child(7) {
+    position: absolute;
+    bottom: 13%;
+    left: 43%;
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Dubai :nth-child(8) {
+    position: absolute;
+    bottom: 7%;
+    left: 26%;
+}
+
+.Dubai :nth-child(9) {
+    position: absolute;
+    bottom: 5%;
+    left: 46%;
+    color: #000;
+    font-family: Actor;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.stars {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    color: #6d6d6d;
+}
+
+.star {
+    /* position: relative;
+    top: 71%;
+    left: 61%; */
+}
+
+.Nepal {
+    width: 321px;
+    height: 416px;
+    /* flex-shrink: 0; */
+    position: relative;
+}
+
+.Nepal :nth-child(1) {
+    width: 321px;
+    height: 416px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    /* position: absolute;
+    top: 105%;
+    left: 490%; */
+}
+
+.Nepal :nth-child(2) {
+    position: absolute;
+    top: 111%;
+    left: 560%;
+    z-index: 1000;
+}
+
+.Nepal :nth-child(3) {
+    position: absolute;
+    top: 105%;
+    left: 555%;
+    width: 106px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(217, 217, 217, 0.70);
+}
+
+.Nepal :nth-child(4) {
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 21.6px */
+    position: absolute;
+    top: 107%;
+    left: 567%;
+    z-index: 1000;
+}
+
+.Nepal :nth-child(5) {
+    width: 286px;
+    height: 102px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(217, 217, 217, 0.70);
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 172%;
+    left: 495%;
+}
+
+.Nepal :nth-child(6) {
+    position: absolute;
+    top: 172%;
+    left: 525%;
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Nepal :nth-child(7) {
+    position: absolute;
+    top: 190%;
+    left: 510%;
+}
+
+.Nepal :nth-child(8) {
+    /* position: absolute; */
+    top: 185%;
+    left: 526%;
+    color: #000;
+    font-family: Actor;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.stars1 {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    color: #6d6d6d;
+}
+
+.star1 {
+    /* position: relative;
+    top: 32%;
+    left: 76%; */
+}

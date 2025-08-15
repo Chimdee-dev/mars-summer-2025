@@ -1,0 +1,274 @@
+body {
+    padding: 5px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#today-books {
+    display: flex;
+    width: 1200px;
+    overflow: scroll;
+    gap: 20px;
+}
+
+#books {
+    background-image: url("../images/Rectangle 492@2x.png");
+    position: relative;
+    width: 1200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+
+h3 {
+    color: #212121;
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+#books p {
+    color: #212121;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px;
+    word-wrap: break-word;
+    display: inline-block;
+    /* 160% */
+}
+
+.para {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.Try {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+}
+
+.btn3 {
+    height: 22px;
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background: #FF4BAC;
+    border: none;
+    color: white;
+}
+
+.btn4 {
+    height: 22px;
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background: #f7eef3;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+.pics {
+    width: 573px;
+    height: 456px;
+    flex-shrink: 0;
+    display: inline-flex;
+}
+
+.pics :nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.pics :nth-child(1) {
+    z-index: 1000;
+}
+
+.pics :nth-child(3) {
+    position: absolute;
+    bottom: 0;
+
+}
+
+#today-books img {
+    height: 244px;
+}
+
+#books-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+#books-nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+    align-content: space-around;
+}
+
+.btn1 {
+    height: 22px;
+    display: inline-flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background: #FDD6EB;
+    border: none;
+}
+
+.btn2 {
+    height: 22px;
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background: #FF4BAC;
+    border: none;
+}
+
+.btns {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.Today {
+    color: #212121;
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.View {
+    display: inline-flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 999px;
+    background: #FDD6EB;
+    border: none;
+}
+.View1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Base (mobile-first) styles would go here...
+   e.g. full-width layout, font sizes, stacking elements, etc. */
+
+@media only screen and (max-width: 600px) {
+
+    /* NAVIGATION */
+    #books-nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    #books-nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 1rem 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #books-nav .btns {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    #books-nav .btns button {
+        width: 100%;
+    }
+
+    /* FIELDSET SECTION */
+    #books .para h2 {
+        font-size: 1.5rem;
+    }
+
+    #books .para h3 {
+        font-size: 1.25rem;
+    }
+
+    #books .para p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    #books .Try {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-top: 1rem;
+    }
+
+    #books .Try button {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    #books .pics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    #books .pics img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    /* TODAY’S HITS SECTION */
+    section {
+        padding: 1rem;
+    }
+
+    .Today {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .View {
+        display: block;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    #today-books {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 0.5rem;
+    }
+}

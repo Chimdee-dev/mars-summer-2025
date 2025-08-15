@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Search</title>
+    <script  src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-6 text-center font-sans">
+    <h1 class="text-3xl font-bold mb-6">🎌 Анимэ хайх</h1>
+    <div class="mb-6">
+        <input id="searchInput" type="text" placeholder="Жишээ: naruto" 
+        class="px-4 py-2 border-gray-300 rounded-l-md
+        focus:outline-none focus:ring-blue-400 w-64">
+        <button onclick="searchAnime()"
+        class="px-4 py-2 bg-blue-500 text-white rounded-r-md hover:bg-blue-600 transition" >Хайх
+    </button>
+    </div>
+    <div id="animeContainer" class="grid grid-cols-1 sm:grid-cols-2 md:gird-cols-3 lg:grid-cols-4 gap-6 justify-center"></div>
+    <script src="js/anime.js" ></script>
+</body>
+</html>
+
+

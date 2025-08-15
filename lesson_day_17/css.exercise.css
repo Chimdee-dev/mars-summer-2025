@@ -1,0 +1,130 @@
+body {
+    position: relative;
+}
+
+.ex1 {
+    position: relative;
+}
+
+.hello {
+    width: 500px;
+    height: 100px;
+    background-color: grey;
+    color: white;
+    font-size: 50px;
+    padding-top: 45px;
+    text-align: center;
+    margin: 50px auto;
+
+}
+
+.ex1:hover .hello {
+    animation: hello 1s linear;
+}
+
+@keyframes hello {
+    to {
+        background-color: red;
+
+    }
+}
+
+.ex1:hover .red {
+    animation: red3 1s linear 2 alternate;
+
+}
+
+@keyframes red3 {
+    to {
+        right: 500px;
+        opacity: 0;
+        top: 10px;
+    }
+}
+
+.red {
+    background-color: red;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    vertical-align: middle;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    right: 250px;
+
+}
+
+.box-1 {
+    width: 300px;
+    height: 300px;
+    background-color: lightgrey;
+    box-shadow: 0 0 1em rgb(136, 136, 136);
+    position: relative;
+}
+
+.item {
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    position: absolute;
+
+    box-sizing: border-box;
+}
+
+.item.blue {
+    background-color: blue;
+    padding: 45px 20px;
+    animation: blue1 2s ease infinite;
+
+}
+
+@keyframes blue1 {
+    from {
+        top: 110px;
+        left: 100px;
+    }
+
+    to {
+        left: 0;
+        top: 0;
+    }
+
+}
+.item.red1 {
+    background-color: rgb(255, 61, 61);
+    padding: 45px 20px;
+    animation: red1 2s ease infinite;
+}
+@keyframes red1 {
+    from {
+        background-color: red;
+        top: 110px;
+        left: 60px;
+    }
+    to {
+        background-color: rgb(255, 98, 13);
+        left: 195px;
+        top: 0px;
+        border-radius: 0%;
+    }
+}
+
+.item.green {
+    background-color: rgb(83, 255, 68);
+    padding: 45px 20px;
+    animation-timing-function: ease-in-out;
+    animation: green1 2s linear infinite;
+}
+@keyframes green1 {
+    from {
+        left: 100px;
+        top: 110px;
+    }
+    to {
+        bottom: 10px;
+        right:100px;
+    }
+}

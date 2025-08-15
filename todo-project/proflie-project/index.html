@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-profile</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="profile-container">
+        <h1>Хүмүүсийн Профайл</h1>
+        <p id="current-date"></p>
+        <div class="profile1">
+            <input type="text" id="name-input" placeholder="Нэр оруулна уу..">
+            <select id="gender-select">
+                <option value="">Хүйс Сонгоно уу</option>
+                <option>Эмэгтэй</option>
+                <option>Эрэгтэй</option>
+            </select>
+            <input type="number" id="age-input" placeholder="Нас оруулна">
+            <br>
+            <br>
+            <button id="add-profile-btn">Нэмэх</button>
+        </div>
+        <h2 class="list-title">Бүртгэгдсэн Профайлууд</h2>
+        <ul class="ul" id="profile-list"></ul>
+        <div class="summary-section">
+            <p>Нийт профайл: <span id="total-profiles"> 0</span></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

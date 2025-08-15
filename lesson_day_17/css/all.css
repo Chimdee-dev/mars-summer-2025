@@ -1,0 +1,6 @@
+body{
+    background-color: rgb(112, 112, 27);
+}
+h1::after{
+    content: "xxl (extra extra large) => 1400px ";
+}

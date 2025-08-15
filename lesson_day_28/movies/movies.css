@@ -1,0 +1,28 @@
+body{
+    background-color: pink;
+}
+#movie-container{
+    padding: 50px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+
+}
+h1{
+    font-size: 34px;
+    color: rgb(33, 33, 1);
+padding-left: 130px;
+}
+#movie-input{
+    font-size: 34px;
+    color: rgb(33, 33, 1);
+}
+input{
+    margin-left: 130px;
+
+}
+#search-btn{
+    font-size: 34px;
+    color: rgb(33, 33, 1);
+    border-radius: 10px;
+}

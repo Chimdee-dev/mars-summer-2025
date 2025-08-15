@@ -1,0 +1,6 @@
+body{
+    background-color: aqua;
+}
+h1::after{
+    content: "xl (extra large) =>1200px";
+}

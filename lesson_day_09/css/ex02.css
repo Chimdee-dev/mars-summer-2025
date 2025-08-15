@@ -1,0 +1,32 @@
+li{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(0, 192, 192);
+    display: inline-block;
+    color: white;
+    text-align: center;
+    
+}
+.flex-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-menu li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coming-soon {
+    display: none;
+}
+li:nth-child(4){
+    visibility: hidden;
+}
+li:hover {
+    background-color: blueviolet;
+}
+
+/* 
+display: inline; i
+/pseudo-class 

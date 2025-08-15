@@ -1,0 +1,129 @@
+body {
+    background-color: rgb(206, 222, 255);
+}
+
+.profile-container {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.profile-container h1 {
+    color: rgb(37, 109, 109);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#add-profile-btn {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(33, 146, 33);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#name-input:hover {
+    color: aqua;
+}
+
+.list-title {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(37, 109, 109);
+}
+
+.summary-section {
+    display: flex;
+    align-self: self-end;
+    margin-right: 30px;
+}
+
+.profile-name {
+    list-style: none;
+    width: 100px;
+    display: block;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.profile-gender {
+    list-style: none;
+    width: 100px;
+    display: block;
+    margin-left: 20px;
+}
+
+.profile-age {
+    list-style: none;
+    width: 100px;
+    display: block;
+    margin-left: 20px;
+}
+
+.edit-btn {
+    color: orange;
+    border: none;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(158, 228, 228);
+}
+
+.delete-btn {
+    color: rgb(183, 49, 0);
+    border: none;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(158, 228, 228);
+    margin-left: 20px;
+}
+
+.delete-btn :hover {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.edit-btn :hover {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile1 input,
+.profile1 select {
+    padding: 10px;
+}
+
+li {
+    width: 500px;
+    height: 100px;
+    background-color: rgb(158, 228, 228);
+    list-style: none;
+    border-radius: 5px;
+}
+
+.actions {
+    position: relative;
+    left: 350px;
+    bottom: 35px;
+    display: inline;
+    justify-content: space-between;
+    gap: 30px;
+}

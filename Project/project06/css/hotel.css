@@ -1,0 +1,233 @@
+body {
+    width: 1512px;
+    height: 982px;
+    background: #E8B389;
+
+}
+
+main {
+    width: 1152px;
+    height: 730px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #F2F2F2;
+    box-shadow: 0px 4px 32px 0px rgba(11, 6, 68, 0.25);
+    margin: 126px 180px;
+    position: relative;
+}
+
+.CheckIn {
+    color: #03010A;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+}
+
+.Eight {
+    color: rgba(3, 1, 10, 0.40);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    width: 442px;
+    padding: 13px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6px;
+    border-radius: 8px;
+    background: #E4E4E4;
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+
+@font-face {
+    font-family: lato;
+    src: url(../Project/project06/fonts/Lato-Regular.ttf);
+}
+
+.calender {
+    position: absolute;
+    top: 11%;
+    left: 41%;
+    width: 30px;
+}
+
+.CheckOut {
+    color: #03010A;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: absolute;
+    top: 23%;
+    left: 4%;
+}
+
+.twelve {
+    color: rgba(3, 1, 10, 0.40);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    width: 442px;
+    padding: 13px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6px;
+    border-radius: 8px;
+    background: #E4E4E4;
+    position: absolute;
+    top: 28%;
+    left: 3%;
+}
+
+@font-face {
+    font-family: lato;
+    src: url(../Project/project06/fonts/Lato-Regular.ttf);
+}
+
+.calender1 {
+    position: absolute;
+    top: 30%;
+    left: 41%;
+    width: 30px;
+}
+
+.select {
+    position: absolute;
+    top: 38%;
+    left: 3%;
+}
+
+#Adults {
+    color: #03010A;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#select1 {
+    display: flex;
+    width: 209px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6px;
+    border-radius: 8px;
+    background: #E4E4E4;
+    color: rgba(3, 1, 10, 0.40);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 5px;
+}
+
+.select3 {
+    position: absolute;
+    top: 38%;
+    left: 26%;
+}
+
+#Children {
+    color: #03010A;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#select4 {
+    display: flex;
+    width: 209px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6px;
+    border-radius: 8px;
+    background: #E4E4E4;
+    color: rgba(3, 1, 10, 0.40);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 5px;
+}
+
+button {
+    width: 442px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 99px;
+    background: #FF8A00;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    top: 88%;
+    left: 4%;
+    border: none;
+}
+
+.pic {
+    position: relative;
+    left: 46.5%;
+    bottom: 85%;
+    display: inline;
+}
+
+.golden {
+    position: absolute;
+    left: 5%;
+    bottom: 38%;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.svg {
+    position: absolute;
+    left: 5%;
+    bottom: 36%;
+}
+.Punta {
+     position: absolute;
+    left: 7%;
+    bottom: 33%;
+    color: #FFF;
+font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.rooms{
+    display: flex;
+    width: 614px;
+    justify-content: space-between;
+}

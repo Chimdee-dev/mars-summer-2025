@@ -1,0 +1,365 @@
+body {
+    background-color: #442686;
+    position: relative;
+}
+
+.div1 {
+    margin-top: 237px;
+    margin-left: 281px;
+    width: 360px;
+    height: 720px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #261351;
+    box-shadow: 0px 4px 90px 0px rgba(0, 0, 0, 0.12);
+
+}
+
+.sar {
+    width: 360px;
+    height: 388px;
+    flex-shrink: 0;
+    border-radius: 24px 24px 200px 200px;
+    background: url(./image/Rectangle\ 373.png) lightgray 50% / cover no-repeat;
+}
+
+.div1 h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-top: 20px;
+}
+
+.div1 p {
+    color: #FFF;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.8px;
+    /* 140% */
+    width: 328px;
+    margin: 16px;
+}
+
+.div1 button {
+    display: flex;
+    width: 328px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #EB7F63;
+    color: #ffffff;
+    margin: 16px;
+}
+
+
+.div2 {
+    width: 360px;
+    height: 720px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #261351;
+    box-shadow: 0px 4px 90px 0px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    top: -70px;
+    left: 700px;
+}
+
+.head {
+    display: flex;
+}
+
+.a {
+    display: inline-flex;
+    padding: 4px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    width: 28px;
+    height: 28px;
+    margin: 16px 26px;
+}
+
+.a1 {
+    width: 48px;
+    height: 48px;
+    margin: 16px 26px;
+    position: absolute;
+    left: 270px;
+}
+
+.a2 {
+    position: absolute;
+    left: 305px;
+    top: 20px;
+}
+
+.head2 {
+    position: relative;
+}
+
+.head2 h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.head2 p {
+    color: rgba(255, 255, 255, 0.64);
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.left {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
+
+.right {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+}
+
+.middle :nth-child(1) {
+    margin: 54px 85px 156px 85px;
+}
+
+.middle :nth-child(2) {
+    position: absolute;
+    top: 239px;
+    left: 115px;
+    z-index: 1000;
+}
+
+.middle :nth-child(3) {
+    position: absolute;
+    top: 279px;
+    right: 150px;
+    z-index: 1000;
+}
+.middle :nth-child(4){
+    position: absolute;
+    top: 239px;
+    left: 115px;
+    background-color: #500b7b;
+}
+.Z{
+
+}
+
+.middle2 {
+    width: 156px;
+    height: 105px;
+    gap: 10px;
+}
+
+.box1 {
+    width: 156px;
+    height: 105px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    position: absolute;
+    top: 65%;
+    left: 5%;
+}
+
+.box12 {
+    display: flex;
+    justify-content: space-around;
+    color: rgba(255, 255, 255, 0.40);
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -5px;
+}
+
+.box13 {
+    color: #FFF;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -10px;
+}
+
+.box14 {
+    display: flex;
+    gap: 5px;
+    margin-top: -55px;
+    margin-left: 5px;
+}
+
+.box15 {
+    color: #65FF61;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.box2 {
+    width: 156px;
+    height: 105px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    position: absolute;
+    top: 65%;
+    right: 5%;
+}
+
+.box16 {
+    display: flex;
+    justify-content: space-around;
+    color: rgba(255, 255, 255, 0.40);
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -5px;
+}
+
+.box17 {
+    color: #FFF;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -10px;
+}
+
+.box18 {
+    display: flex;
+    gap: 5px;
+    margin-top: -55px;
+    margin-left: 5px;
+}
+
+.box19 {
+    color: #FFE661;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer {
+    height: 51px;
+    border-radius: 4px;
+    /* background: #4888F6; */
+    gap: 4px;
+    margin: -70px 16px;
+    display: flex;
+}
+
+.footer :nth-child(1) {
+    width: 32px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #44C7CF;
+}
+
+.footer :nth-child(2) {
+    width: 64px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #4888F6;
+}
+
+.footer :nth-child(3) {
+    width: 17px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #44C7CF;
+}
+
+.footer :nth-child(4) {
+    width: 33px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #E07A49;
+}
+
+.footer :nth-child(5) {
+    width: 84px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #4888F6;
+
+}
+
+.footer :nth-child(6) {
+    width: 15px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #E07A49;
+}
+
+.footer :nth-child(7) {
+    width: 9px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #4888F6;
+
+}
+.footer :nth-child(8) {
+    width: 46px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #44C7CF;
+}
+.footer2{
+    display: flex;
+}
+.footer21{
+   position: absolute;
+   bottom: 6%;
+   left: 5%;
+}
+.footer22{
+    position: absolute;
+    bottom: 6%;
+    right: 5%;
+}

@@ -1,0 +1,14 @@
+.margin {
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    color: black;
+    margin: 10px 20px;
+}
+.centered-square {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    color: red;
+    margin: 0 auto;
+}

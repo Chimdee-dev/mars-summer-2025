@@ -1,0 +1,175 @@
+.general {
+    width: 1512px;
+    height: 982px;
+    background-color: #fff;
+    position: relative;
+}
+
+.General1 {
+    display: inline;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.TomZurag {
+    width: 494px;
+    height: 632px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    position: absolute;
+    top: 10%;
+    left: 17%;
+}
+
+.para {
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    width: 500px;
+}
+
+.para :nth-child(1) {
+    color: #1A75FF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Merriweather;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.para :nth-child(2) {
+    width: 533px;
+    height: 120px;
+    flex-shrink: 0;
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.para :nth-child(3) {
+    color: rgba(0, 0, 0, 0.60);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Merriweather;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.para :nth-child(4) {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Merriweather;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.para :nth-child(5) {
+    color: #1A75FF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Merriweather;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    border-radius: 4px;
+    background: #ACF;
+}
+
+.para :nth-child(6) {
+    color: rgba(0, 0, 0, 0.32);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Merriweather;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: line-through;
+    position: absolute;
+    bottom: 9%;
+    left: 0%;
+
+}
+
+.para :nth-child(7) {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Merriweather;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.para1 {
+    display: flex;
+    gap: 29px;
+    position: absolute;
+    bottom: 7%;
+    left: 70%;
+
+}
+
+.para1 p:hover {
+    background: #1A75FF;
+    border-radius: 1px solid black;
+    width: 48px;
+    flex-shrink: 0;
+    height: 48px;
+
+}
+
+.para1:nth-child(1),
+.para1:nth-child(3),
+.para1:nth-child(4),
+.para1:nth-child(5) {
+    width: 48px;
+    height: 48px;
+    color: #000;
+    font-family: Merriweather;
+    font-size: 16px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    flex-shrink: 0;
+}
+
+.m {
+    background: #000000;
+    color: white;
+    width: 48px;
+    flex-shrink: 0;
+}
+
+button {
+    display: flex;
+    width: 533px;
+    padding: 16px 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: #1A75FF;
+    position: absolute;
+    bottom: -7%;
+    left: 70%;
+    color: #fff;
+    border: none;
+
+}

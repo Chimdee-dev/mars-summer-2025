@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="w-[416px] bg-white shadow-lg rounded-lg p-6">
+        <div class="calculator">
+            <form>
+                <!-- Display -->
+                <div class="mb-4">
+                    <input type="text" name="display" id="display"
+                        class="w-full h-[60px] text-[24px] text-right bg-gray-200 rounded-lg px-4" disabled>
+                </div>
+                <!-- Buttons -->
+                <div class="grid grid-cols-4 gap-2">
+                    <!-- Row 1 -->
+                    <input type="button" value="AC" onclick="clearDisplay()"
+                        class="bg-red-500 text-white rounded-lg h-[50px] text-[18px]">
+                    <input type="button" value="Del" onclick="deleteLast()"
+                        class="bg-yellow-500 text-white rounded-lg h-[50px] text-[18px]">
+                    <input type="button" value="." onclick="appendToDisplay('.')"
+                        class="bg-gray-300 text-black rounded-lg h-[50px] text-[18px]">
+                    <input type="button" value="/" onclick="appendToDisplay('/')"
+                        class="bg-blue-500 text-white rounded-lg h-[50px] text-[18px]">
+
+                    <!-- Row 2 -->
+                    <input type="button" value="7" onclick="appendToDisplay('7')"
+                        class="bg-gray-300 text-black rounded-lg h-[50px] text-[18px]">
+                    <input type="button" value="8" onclick="appendToDisplay('8')"
+                        class="bg-gray-300 text-black rounded-lg h-[50px] text-[18px]">
+                    <input type="button" value="9" onclick="appendToDisplay('9')"
+                        class="bg-gray-300 text-black rounded-lg h-[50px] text-[18px]">
+                    <input type="button" value="*" onclick="appendToDisplay('*')"
+                        class="bg-blue-500 text-white rounded-lg h-[50px] text-[18px]">
+
+                    <!-- Row 3 -->
+                    <input type="button" value="4" onclick="appendToDisplay('4')"
+                        class="bg-gray-300 text-black rounded-lg h-[50px] text-[18px]">
+                    <input type="button" value="5" onclick="appendToDisplay('5')"
+                        class="bg-gray-300 text-black rounded-lg h-[50px] text-[18px]">
+                    <input type="button" value="6" onclick="appendToDisplay('6')"
+                        class="bg-gray-300 text-black rounded-lg h-[50px] text-[18px]">
+                    <input type="button" value="-" onclick="appendToDisplay('-')"
+                        class="bg-blue-500 text-white rounded-lg h-[50px] text-[18px]">
+
+                    <!-- Row 4 -->
+                    <input type="button" value="1" onclick="appendToDisplay('1')"
+                        class="bg-gray-300 text-black rounded-lg h-[50px] text-[18px]">
+                    <input type="button" value="2" onclick="appendToDisplay('2')"
+                        class="bg-gray-300 text-black rounded-lg h-[50px] text-[18px]">
+                    <input type="button" value="3" onclick="appendToDisplay('3')"
+                        class="bg-gray-300 text-black rounded-lg h-[50px] text-[18px]">
+                    <input type="button" value="+" onclick="appendToDisplay('+')"
+                        class="bg-blue-500 text-white rounded-lg h-[50px] text-[18px]">
+
+                    <!-- Row 5 -->
+                    <input type="button" value="00" onclick="appendToDisplay('00')"
+                        class="bg-gray-300 text-black rounded-lg h-[50px] text-[18px]">
+                    <input type="button" value="0" onclick="appendToDisplay('0')"
+                        class="bg-gray-300 text-black rounded-lg h-[50px] text-[18px]">
+                    <input type="button" value="=" onclick="calculateResult()"
+                        class="bg-green-500 text-white rounded-lg h-[50px] text-[18px] col-span-2">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const display = document.getElementById('display');
+
+        function clearDisplay() {
+            display.value = '';
+        }
+
+        function deleteLast() {
+            display.value = display.value.slice(0, -1);
+        }
+
+        function appendToDisplay(value) {
+            display.value += value;
+        }
+
+        function calculateResult() {
+            try {
+                display.value = eval(display.value);
+            } catch {
+                display.value = 'Error';
+            }
+        }
+    </script>
+</body>
+
+</html>

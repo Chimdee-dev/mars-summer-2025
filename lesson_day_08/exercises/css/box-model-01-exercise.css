@@ -1,0 +1,103 @@
+.Ex1{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(104, 104, 192);
+}
+.Ex2{
+    width: 500px;
+    height: 300px;
+    background-color: aquamarine;
+}
+.Ex3 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: antiquewhite;
+    overflow: hidden;
+}
+.Ex4 {
+    width: 500px;
+    height: 300px;
+    background-color: antiquewhite;
+    overflow: scroll;
+}
+.Ex5{
+    background-color: aquamarine;
+    width: 600px;
+    height: 200px;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.Ex5 div {
+    width: 200px;
+    margin: 10px;
+    border: 1px solid black;
+}
+.box1{
+    width: 300px;
+    height: 150px;
+    background-color: pink;
+    overflow: scroll;
+    padding: 10px;
+}
+.box2{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(255, 237, 79);
+    overflow: scroll;
+    padding: 10px;
+}
+
+.Ex6 {
+    max-width: 900px;
+    display: flex;
+    gap: 10px;
+}
+
+.Column1{
+    width: 33%;
+    height: 100px;
+    background-color: rgb(0, 110, 110);
+    text-align: center;
+}
+.Column2{
+    width: 33%;
+    height: 100px;
+    background-color: rgb(0, 110, 110);
+    text-align: center;
+}
+.Column3{
+    width: 33%;
+    height: 100px;
+    background-color: rgb(0, 110, 110);
+    text-align: center;
+}
+.Ex7{
+    max-width: 400px;
+    min-width: 200px;
+    background-color: pink;
+    border: 1px solid black;
+}
+.Ex8{
+    max-height: 300px;
+    min-height: 100px;
+    background-color: bisque;
+    width: 500px;
+}
+.Ex9{
+    max-width: 100%;
+    height: auto;
+}
+.Ex10 {
+    max-width: 300px;
+    height: 80px;
+    background-color: aquamarine;
+    overflow-x: scroll;
+}
+.Ex10 div{
+    width: 5050px;
+    font-size: 20px;
+}

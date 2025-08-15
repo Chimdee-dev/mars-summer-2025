@@ -1,0 +1,135 @@
+.logo {
+    color: #212121;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: Moul;
+}
+body {
+    background-color: #F7F7F7;
+}
+@font-face {
+    font-family: Moul;
+    src: url(../fonts/Moul-Regular.ttf);
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin: 0 ;
+
+    
+
+}
+
+
+.nav1 a {
+    color: #000000;
+    font-family: Lato;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 20px;
+    text-decoration-line: none;
+    font-family: Lato;
+}
+
+.button1 {
+    color: #212121;
+    font-family: Lato;
+    font-size: 15px;
+    text-decoration-line: underline;
+    text-decoration-thickness: auto;
+    border: none;
+    padding: 10px;
+    background-color: white;
+}
+
+.button2 {
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 16px;
+    border-radius: 8px;
+    background: #4BAB66;
+    border: none;
+    padding: 16px 32px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 270px;
+    
+
+}
+.title {
+    color: #212121;
+font-family: Lato;
+font-size: 48px;
+font-style: normal;
+font-weight: 800;
+line-height: 65px;
+}
+.text {
+    color: #212121;
+
+font-family: Lato;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px;
+}
+.button3 {
+    color: #FFF;
+
+font-family: Lato;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+display: inline-flex;
+padding: 16px 32px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+border-radius: 8px;
+background: #4BAB66;
+margin-right: 20px;
+border: none;
+
+}
+.button4 {
+    color: #212121;
+
+font-family: Lato;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+display: inline-flex;
+padding: 16px 32px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+border-radius: 8px;
+background: #D8E392;
+border: none;
+
+
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/intro_position.css">
+</head>
+<body>
+    <!-- Fixed notification for Exercise 4 -->
+    <div class="ex4-fixed">
+        📌 This is a fixed element!<br>
+        <small>It stays here when you scroll</small>
+    </div>
+
+    <h1>CSS Position Exercises: Beginner to Intermediate</h1>
+
+    <!-- Exercise 1: Static Position -->
+    <div class="exercise">
+        <h2>Exercise 1: Static Position (Default)</h2>
+        <p><strong>Concept:</strong> Understanding the default positioning behavior</p>
+        <div class="demo-area">
+            <div class="ex1-box">Static Position Box</div>
+            <p>This box uses position: static (the default). It flows normally in the document and ignores top, right, bottom, left properties.</p>
+        </div>
+        <div class="note">
+            <strong>Key Point:</strong> Static positioned elements are not affected by top, right, bottom, left properties and cannot be used as a positioning context for absolutely positioned children.
+        </div>
+    </div>
+
+    <!-- Exercise 2: Relative Position -->
+    <div class="exercise">
+        <h2>Exercise 2: Relative Position</h2>
+        <p><strong>Concept:</strong> Moving elements relative to their normal position</p>
+        <div class="demo-area">
+            <div class="ex2-reference">Original Position (reference)</div>
+            <div class="ex2-box">Relatively Positioned<br>top: 20px; left: 30px;</div>
+            <p>The teal box is positioned relative to where it would normally be. Notice the original space is preserved (shown in gray).</p>
+        </div>
+        <div class="note">
+            <strong>Key Point:</strong> Relative positioning moves the element but preserves its original space in the document flow. It also creates a positioning context for absolutely positioned children.
+        </div>
+    </div>
+
+    <!-- Exercise 3: Absolute Position -->
+    <div class="exercise">
+        <h2>Exercise 3: Absolute Position</h2>
+        <p><strong>Concept:</strong> Positioning relative to the nearest positioned ancestor</p>
+        <div class="demo-area">
+            <div class="ex3-container">
+                <p>This container has position: relative and serves as the positioning context.</p>
+                <div class="ex3-box">Absolutely Positioned<br>top: 30px; right: 20px;</div>
+            </div>
+        </div>
+        <div class="note">
+            <strong>Key Point:</strong> Absolutely positioned elements are removed from the normal document flow and positioned relative to their nearest positioned ancestor (non-static).
+        </div>
+    </div>
+
+    <!-- Exercise 4: Fixed Position -->
+    <div class="exercise">
+        <h2>Exercise 4: Fixed Position</h2>
+        <p><strong>Concept:</strong> Positioning relative to the viewport</p>
+        <div class="demo-area">
+            <p>Look at the top-right corner of your browser window! There's a yellow notification box that stays fixed even when you scroll. This demonstrates <span class="highlight">position: fixed</span>.</p>
+            <p>Fixed elements are positioned relative to the viewport and don't move when the page is scrolled. They're commonly used for headers, navigation bars, and notifications.</p>
+        </div>
+        <div class="note">
+            <strong>Key Point:</strong> Fixed elements are positioned relative to the viewport and remain in place during scrolling. They're removed from the normal document flow.
+        </div>
+    </div>
+
+    <!-- Exercise 5: Sticky Position -->
+    <div class="exercise">
+        <h2>Exercise 5: Sticky Position</h2>
+        <p><strong>Concept:</strong> Hybrid between relative and fixed positioning</p>
+        <div class="demo-area">
+            <div class="ex5-container">
+                <div class="ex5-sticky">🔥 Sticky Header - Scroll to see the magic!</div>
+                <div class="ex5-content">
+                    <h3>Scrollable Content</h3>
+                    <p>This content is inside a scrollable container. The purple header above is sticky - it behaves like a relatively positioned element until you scroll past it, then it sticks to the top of its container.</p>
+                    <p>Keep scrolling to see how the sticky header behaves differently from fixed positioning...</p>
+                    <p>Sticky positioning is perfect for section headers, table headers, and navigation that should stick when scrolling but only within their container.</p>
+                    <p>Notice how the sticky element only sticks within its container boundaries, unlike fixed elements which stick to the viewport.</p>
+                    <p>This is more content to demonstrate the scrolling behavior...</p>
+                    <p>More content here...</p>
+                    <p>And even more content to make this container scrollable...</p>
+                </div>
+            </div>
+        </div>
+        <div class="note">
+            <strong>Key Point:</strong> Sticky elements switch between relative and fixed behavior based on scroll position. They stick to their container, not the viewport.
+        </div>
+    </div>
+
+    <!-- Exercise 6: Centering with Absolute Position -->
+    <div class="exercise">
+        <h2>Exercise 6: Perfect Centering with Absolute Position</h2>
+        <p><strong>Concept:</strong> Using absolute positioning with transform to center elements</p>
+        <div class="demo-area">
+            <div class="ex6-container">
+                <div class="ex6-centered">Perfectly Centered!</div>
+            </div>
+        </div>
+        <div class="note">
+            <strong>Key Point:</strong> The technique uses <code>top: 50%; left: 50%</code> to position the element's top-left corner at the center, then <code>transform: translate(-50%, -50%)</code> to shift it back by half its width and height.
+        </div>
+    </div>
+
+    <!-- Exercise 7: Z-index and Stacking Context -->
+    <div class="exercise">
+        <h2>Exercise 7: Z-index and Stacking Order</h2>
+        <p><strong>Concept:</strong> Controlling which elements appear on top using z-index</p>
+        <div class="demo-area">
+            <div class="ex7-container">
+                <div class="ex7-box ex7-box1">Box 1<br>z-index: 1</div>
+                <div class="ex7-box ex7-box2">Box 2<br>z-index: 3</div>
+                <div class="ex7-box ex7-box3">Box 3<br>z-index: 2</div>
+            </div>
+        </div>
+        <div class="note">
+            <strong>Key Point:</strong> Z-index only works on positioned elements (non-static). Higher z-index values appear on top. The teal box (z-index: 3) is on top, followed by blue (z-index: 2), then red (z-index: 1).
+        </div>
+    </div>
+
+    <!-- Exercise 8: Modal Dialog -->
+    <div class="exercise">
+        <h2>Exercise 8: Modal Dialog with Positioning</h2>
+        <p><strong>Concept:</strong> Creating overlays and modals using fixed positioning</p>
+        <div class="demo-area">
+            <button class="ex8-modal-trigger" onclick="openModal()">Open Modal</button>
+            <p>Click the button to see a modal dialog that uses fixed positioning to overlay the entire page.</p>
+        </div>
+        <div class="note">
+            <strong>Key Point:</strong> Modals use fixed positioning to cover the entire viewport, with an overlay background and centered content. High z-index ensures they appear above other content.
+        </div>
+    </div>
+
+    <!-- Modal for Exercise 8 -->
+    <div class="ex8-modal-overlay" id="modalOverlay" onclick="closeModal()">
+        <div class="ex8-modal" onclick="event.stopPropagation()">
+            <button class="ex8-close" onclick="closeModal()">&times;</button>
+            <h3>Modal Dialog</h3>
+            <p>This modal uses fixed positioning to overlay the entire page. The overlay covers the full viewport, and the modal content is centered using absolute positioning.</p>
+            <p>Click the X button or click outside the modal to close it.</p>
+        </div>
+    </div>
+
+    <!-- Exercise 9: Tooltip with Positioning -->
+    <div class="exercise">
+        <h2>Exercise 9: Tooltip with Absolute Positioning</h2>
+        <p><strong>Concept:</strong> Creating tooltips that appear relative to their trigger element</p>
+        <div class="demo-area">
+            <p>Hover over the button below to see a tooltip:</p>
+            <div class="ex9-tooltip-container">
+                <div class="ex9-trigger">Hover me!</div>
+                <div class="ex9-tooltip">This is a tooltip positioned above the button!</div>
+            </div>
+        </div>
+        <div class="note">
+            <strong>Key Point:</strong> Tooltips use absolute positioning relative to their container, with careful use of transform to center them and pseudo-elements to create arrow pointers.
+        </div>
+    </div>
+
+    <!-- Exercise 10: Complex Layout -->
+    <div class="exercise">
+        <h2>Exercise 10: Complex Application Layout</h2>
+        <p><strong>Concept:</strong> Combining different positioning techniques for a complete layout</p>
+        <div class="demo-area">
+            <div class="ex10-layout">
+                <div class="ex10-header">
+                    <h3>Application Header</h3>
+                </div>
+                <div class="ex10-sidebar">
+                    <h4>Sidebar</h4>
+                    <p>Navigation menu and tools</p>
+                </div>
+                <div class="ex10-main">
+                    <h4>Main Content Area</h4>
+                    <p>This layout demonstrates how different positioning techniques can work together:</p>
+                    <ul>
+                        <li><strong>Header:</strong> Absolute positioned at the top</li>
+                        <li><strong>Sidebar:</strong> Absolute positioned on the left</li>
+                        <li><strong>Main:</strong> Absolute positioned with calculated margins</li>
+                        <li><strong>Footer:</strong> Absolute positioned at the bottom</li>
+                        <li><strong>Floating Button:</strong> Absolute positioned in bottom-right</li>
+                    </ul>
+                    <p>This creates a complete application-style layout where each section knows its exact position and size.</p>
+                </div>
+                <div class="ex10-footer">
+                    Footer Content
+                </div>
+                <button class="ex10-floating-btn">+</button>
+            </div>
+        </div>
+        <div class="note">
+            <strong>Key Point:</strong> Complex layouts can combine multiple positioning techniques. The container uses relative positioning to establish a positioning context, while children use absolute positioning for precise placement.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <h2>Position Property Summary</h2>
+        <div class="demo-area">
+            <h3>Position Values and Their Behavior:</h3>
+            <p><strong>static:</strong> Default value. Element flows normally, ignores top/right/bottom/left.</p>
+            <p><strong>relative:</strong> Positioned relative to its normal position. Creates positioning context.</p>
+            <p><strong>absolute:</strong> Positioned relative to nearest positioned ancestor. Removed from normal flow.</p>
+            <p><strong>fixed:</strong> Positioned relative to viewport. Stays in place when scrolling.</p>
+            <p><strong>sticky:</strong> Switches between relative and fixed based on scroll position.</p>
+
+            <h3>Important Concepts:</h3>
+            <p><strong>Positioning Context:</strong> Non-static elements create a positioning context for their absolutely positioned children.</p>
+            <p><strong>Stacking Context:</strong> Z-index controls stacking order for positioned elements.</p>
+            <p><strong>Document Flow:</strong> Static and relative elements stay in flow; absolute and fixed are removed.</p>
+        </div>
+    </div>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

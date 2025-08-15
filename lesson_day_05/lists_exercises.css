@@ -1,0 +1,43 @@
+ul{
+    list-style-type: circle;
+}
+ol{
+    list-style-type: upper-roman;
+}
+.hi{
+    list-style-type: lower-alpha;
+}
+.animel
+{
+    list-style-type: square;
+}
+.instrument{
+    list-style-image: url(images/star\ \(1\).png);
+}
+.od{
+    margin: 10px;
+}
+.vege li {
+    list-style-type: square;
+}
+.fruit  {
+    list-style-type: square;
+}
+.dairy {
+    list-style-type: square;
+}
+.ing {
+    list-style-image: url(images/cutlery.png);
+}
+.step{
+    list-style-type: lower-alpha;
+}
+.do {
+    list-style-image: url(images/correct.png);
+}
+.Meat{
+    list-style-type: lower-latin;
+}
+.grass {
+    list-style-type: circle;
+}

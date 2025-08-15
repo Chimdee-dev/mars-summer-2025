@@ -1,0 +1,11 @@
+.item{
+    width: 500px;
+    text-align: center;
+}
+
+#meal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}

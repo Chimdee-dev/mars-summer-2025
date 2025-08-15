@@ -1,0 +1,132 @@
+body {
+    background-color: #EEE;
+    position: relative;
+    margin: 0%;
+    max-width: 1900px;
+}
+
+@media(max-width:600px) {
+    main .header {
+        display: flex;
+        flex-direction: row;
+        width: 402px;
+        height: 70px;
+        border-radius: 41px;
+        position: fixed;
+        bottom: 20px;
+        left: 10%;
+    }
+
+    .img1 {
+        width: 0;
+        height: 0;
+    }
+
+    main .sumtai1 {
+        display: none;
+    }
+
+    main .sumtai2 {
+        display: none;
+    }
+
+    main .about {
+        width: 366px;
+        height: 800px;
+        flex-shrink: 0;
+        position: fixed;
+        top: 5%;
+        left: 14%;
+    }
+    main .about :nth-child(1){
+        font-size: 50px;
+        position: fixed;
+        top: 15%;
+        left: 30%;
+    }
+    main .about :nth-child(2){
+        font-size: 20px;
+        width: 320px;
+        position: fixed;
+        left: -15%;
+        top: 30%;
+    }
+
+}
+
+.header {
+    background-color: black;
+    width: 96px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.img1 {
+    position: absolute;
+    top: 92%;
+}
+
+.sumtai1 {
+    position: absolute;
+    left: 10%;
+}
+
+.sumtai2 {
+    position: fixed;
+    right: 5%;
+    bottom: 0;
+}
+
+.about {
+    width: 1464px;
+    height: 815px;
+    flex-shrink: 0;
+    border-radius: 0 100px 0 100px;
+    box-shadow: 10px 10px 0px 0px black;
+    justify-content: center;
+    position: fixed;
+    left: 20%;
+    top: 10%;
+    border: 1px solid black;
+}
+
+.about :nth-child(1) {
+    color: #000;
+    text-align: center;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.20);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-family: Cairo;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    /* padding-top: 40px; */
+}
+
+@font-face {
+    font-family: Cairo;
+    src: url(../fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+.about :nth-child(2) {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 160px 160px 160px;
+    width: 1100px;
+}

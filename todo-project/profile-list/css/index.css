@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(206, 222, 255);
+}
+
+.profile-app-container {
+    width: 700px;
+    height: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.app-title {
+    color: rgb(37, 109, 109);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#name-input:hover {
+    color: aqua;
+}
+
+.input-section {
+    display: block;
+    display: inline-block;
+}
+
+.list-title {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(37, 109, 109);
+}
+
+.summary-section {
+    display: inline-block;
+    align-self: flex-end;
+    margin-right: 30px;
+}
+
+.edit-btn {
+    color: orange;
+    border: none;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(158, 228, 228);
+    margin-left: 20px;
+}
+
+.check-btn {
+    color: rgb(48, 40, 25);
+    border: none;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(158, 228, 228);
+}
+
+.delete-btn {
+    color: rgb(183, 49, 0);
+    border: none;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(158, 228, 228);
+    margin-left: 20px;
+}
+
+.delete-btn :hover {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.edit-btn :hover {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.check-btn :hover {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li {
+    width: 500px;
+    height: 100px;
+    background-color: rgb(9, 66, 66);
+    list-style: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.task-list {
+    position: relative;
+    left: 50px;
+    bottom: -25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    position: relative;
+    left: 300px;
+}
+.list{
+    display: flex;
+}

@@ -1,0 +1,170 @@
+// finction declaration 
+function sayHello() {
+    console.log("Hello");
+
+}
+sayHello();
+
+function addTwoNumbers(a, b) {
+    console.log(a + b);
+}
+//NaN not a number
+addTwoNumbers(3, 54);
+addTwoNumbers(5, 8);
+
+function greet(name) {
+    console.log(`Hello, ${name}`);
+}
+greet("Chimdee");
+
+// let nameInput = prompt("Give me your name:");
+// greet(nameInput);
+
+function addNumbers(a, b, c) {
+    return a + b + c;
+}
+console.log(addNumbers(1, 2, 3));
+
+console.log(addTwoNumbers(1, 2) + 8); // NaN
+
+console.log(addNumbers(3, 4, 5) + 3);
+
+
+let sum1 = addTwoNumbers(1, 2);
+console.log(sum1);
+
+let sum2 = addNumbers(1, 2, 3);
+console.log(sum2);
+
+// function expression 
+let x = function (num) {
+    return num * num;
+}
+console.log(x(4));
+
+let add = function (a, b) {
+    return a + b;
+}
+console.log(add(1, 2));
+
+
+// arrow function 
+let z = (num) => {
+    return num + num;
+}
+console.log(z(3));
+
+let myFunction = (a, b) => {
+    if (a > b) {
+        return a;
+    } else if (b > a) {
+        return b;
+    } else {
+        return "Equal";
+    }
+}
+console.log(myFunction(8, 89));
+
+
+let range = (min, max) => {
+    let sum = 0;
+    for ( let i = min; i <= max;  i++ ){
+       sum += i;
+    }
+    return sum;
+}
+console.log(range(1, 10));
+
+// range(3,48);
+// console.log(sum);
+
+// Өгөгдсөн тэгш өнцөгийн талбайг олох арга гэдэг функц бичнэ үү.
+let area = 
+
+
+
+
+function area ( c , d){
+    return ( c * d);
+}
+console.log(area(50,60));
+
+
+// uur arga 
+let area1 = function (e,f){
+    return e * f;
+}
+console.log(area1(50,60));
+
+
+
+// function expression
+let square = function (f){
+    return f * f;
+}
+console.log(square(4));
+
+ //arrow function
+let square1 = (num) => {
+    return num * num;
+}
+console.log(square(6));
+// arrow function
+let sqaureRoot = (num) => {
+    return Math.sqrt(num);
+}
+console.log(sqaureRoot(121));
+
+
+// ex1 
+
+function World(){
+    console.log('Hello World');
+    
+}
+World();
+
+ //ex2 
+ let sqauresRoot = (num) => {
+    return Math.sqrt(num);
+}
+console.log(sqauresRoot(49));
+
+//ex3 
+let celsius = 0;
+let frainHeit = (celsius) => {
+    return (celsius * 9/5)+ 32;
+}
+console.log(frainHeit(27));
+
+
+//ex 4
+let area2 = function (e,f){
+    return e * f;
+}
+console.log(area2(50,60));
+
+//ex5 
+let oron = function (a){
+    let too = a.toString();
+    too = too.split("").reverse().join("");
+    return `${a} => ${too}`;
+}
+console.log(oron(789));
+
+
+//ex6 
+let word = function (b){
+    let word1 = b.toString();
+    word1 = word1.split('').reverse().join('');
+    if (b == word1){
+        return true;
+    } else {
+        return false
+    }
+}
+console.log(word('mom'));
+
+//ex7 
+
+

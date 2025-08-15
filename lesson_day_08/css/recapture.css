@@ -1,0 +1,31 @@
+h1 {font-size: 20px;
+    font-family: cursive;
+}
+.block{ 
+    border: 5px solid rgb(210, 71, 71);
+    margin-bottom: 15px;
+} 
+.inline {
+    border: 5px dotted rgb(142, 142, 142);
+    margin-left: 30px;
+}
+.box-model-01{
+    border-style: double;
+    border-width: 3px;
+    border-color: aqua;
+    border-top-style: groove;
+    margin-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+}
+.box-model-02{
+    border: 1px solid brown;
+    margin-top: 10px 20px 30px 40px;
+
+}
+.box-model-03{
+    border: 2px double darkblue;
+    margin-top: 10px 20px 30px;
+}

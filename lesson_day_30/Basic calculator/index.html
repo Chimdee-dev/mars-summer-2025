@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Mode Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-100 flex items-center justify-center min-h-screen">
+    <div id="calculator" class="w-[616px] h-[841px] bg-white shadow-lg rounded-lg p-6">
+        <div class="flex justify-between items-center mb-6">
+            <p id="calc" class="text-gray-800 text-[34px] font-bold">Calc</p>
+            <div class="flex items-center space-x-4">
+                <button onclick="toggleTheme()" class="p-2 bg-gray-200 rounded-full hover:bg-gray-300  ">
+                    <img id="themeIcon" class="w-[32px] h-[32px]" src="../images/light/dark-mode-icon.png"
+                        alt="Light Mode">
+                </button>
+            </div>
+        </div>
+
+        <!-- Display -->
+        <div class="mb-6">
+            <div id="operation" class="text-gray-500 text-lg mb-2 min-h-[1.5rem]"></div>
+            <div id="display"
+                class="text-5xl font-light text-gray-800 bg-gray rounded-lg p-4 min-h-[3.5rem] flex items-end justify-end">
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="grid grid-cols-4 gap-4">
+            <!-- Row 1 -->
+            <button onclick="clearAll()"
+                class="bg-blue-500 text-white rounded-lg h-[72px] text-[24px] font-bold">AC</button>
+            <button onclick="clearEntry()"
+                class="bg-blue-500 text-white rounded-lg h-[72px] text-[24px] font-bold">C</button>
+            <button onclick="appendOperator('%')"
+                class="bg-blue-500 text-white rounded-lg h-[72px] text-[24px] font-bold">%</button>
+            <button onclick="appendOperator('/')"
+                class="bg-blue-500 text-white rounded-lg h-[72px] text-[24px] font-bold">÷</button>
+
+            <!-- Row 2 -->
+            <button onclick="appendNumber('7')"
+                class="bg-gray-300 text-gray-800 rounded-lg h-[72px] text-[24px] font-bold">7</button>
+            <button onclick="appendNumber('8')"
+                class="bg-gray-300 text-gray-800 rounded-lg h-[72px] text-[24px] font-bold">8</button>
+            <button onclick="appendNumber('9')"
+                class="bg-gray-300 text-gray-800 rounded-lg h-[72px] text-[24px] font-bold">9</button>
+            <button onclick="appendOperator('*')"
+                class="bg-blue-500 text-white rounded-lg h-[72px] text-[24px] font-bold">×</button>
+
+            <!-- Row 3 -->
+            <button onclick="appendNumber('4')"
+                class="bg-gray-300 text-gray-800 rounded-lg h-[72px] text-[24px] font-bold">4</button>
+            <button onclick="appendNumber('5')"
+                class="bg-gray-300 text-gray-800 rounded-lg h-[72px] text-[24px] font-bold">5</button>
+            <button onclick="appendNumber('6')"
+                class="bg-gray-300 text-gray-800 rounded-lg h-[72px] text-[24px] font-bold">6</button>
+            <button onclick="appendOperator('-')"
+                class="bg-blue-500 text-white rounded-lg h-[72px] text-[24px] font-bold">−</button>
+
+            <!-- Row 4 -->
+            <button onclick="appendNumber('1')"
+                class="bg-gray-300 text-gray-800 rounded-lg h-[72px] text-[24px] font-bold">1</button>
+            <button onclick="appendNumber('2')"
+                class="bg-gray-300 text-gray-800 rounded-lg h-[72px] text-[24px] font-bold">2</button>
+            <button onclick="appendNumber('3')"
+                class="bg-gray-300 text-gray-800 rounded-lg h-[72px] text-[24px] font-bold">3</button>
+            <button onclick="appendOperator('+')"
+                class="bg-blue-500 text-white rounded-lg h-[72px] text-[24px] font-bold">+</button>
+
+            <!-- Row 5 -->
+            <button onclick="appendNumber('0')"
+                class="col-span-2 bg-gray-300 text-gray-800 rounded-lg h-[72px] text-[24px] font-bold">0</button>
+            <button onclick="appendNumber('.')"
+                class="bg-gray-300 text-gray-800 rounded-lg h-[72px] text-[24px] font-bold">.</button>
+            <button onclick="calculate()"
+                class="bg-green-500 text-white rounded-lg h-[72px] text-[24px] font-bold">=</button>
+        </div>
+    </div>
+
+    <script>
+        let currentInput = '0';
+        let operator = null;
+        let previousInput = null;
+        let waitingForNewInput = false;
+        let isLightTheme = false;
+
+        const display = document.getElementById('display');
+        const operation = document.getElementById('operation');
+        const calculator = document.getElementById('calculator');
+        const themeIcon = document.getElementById('themeIcon');
+        const calc = document.getElementById('calc');
+
+        function updateDisplay() {
+            display.textContent = formatNumber(currentInput);
+
+            if (previousInput && operator) {
+                operation.textContent = `${formatNumber(previousInput)} ${getOperatorSymbol(operator)}`;
+            } else {
+                operation.textContent = '';
+            }
+        }
+
+        function formatNumber(num) {
+            if (num === 'Error') return num;
+            const number = parseFloat(num);
+            if (isNaN(number)) return num;
+
+            // Format large numbers with commas
+            if (Math.abs(number) >= 1000) {
+                return number.toLocaleString();
+            }
+
+            return num;
+        }
+
+        function getOperatorSymbol(op) {
+            switch (op) {
+                case '+': return '+';
+                case '-': return '−';
+                case '*': return '×';
+                case '/': return '÷';
+                case '%': return '%';
+                default: return op;
+            }
+        }
+
+        function appendNumber(number) {
+            if (waitingForNewInput) {
+                currentInput = number;
+                waitingForNewInput = false;
+            } else {
+                if (currentInput === '0' && number !== '.') {
+                    currentInput = number;
+                } else if (number === '.' && currentInput.includes('.')) {
+                    return; // Don't add multiple decimal points
+                } else {
+                    currentInput += number;
+                }
+            }
+            updateDisplay();
+        }
+
+        function appendOperator(op) {
+            if (previousInput !== null && operator !== null && !waitingForNewInput) {
+                calculate();
+            }
+
+            previousInput = currentInput;
+            operator = op;
+            waitingForNewInput = true;
+            updateDisplay();
+        }
+
+        function calculate() {
+            if (previousInput === null || operator === null) return;
+
+            const prev = parseFloat(previousInput);
+            const current = parseFloat(currentInput);
+            let result;
+
+            switch (operator) {
+                case '+':
+                    result = prev + current;
+                    break;
+                case '-':
+                    result = prev - current;
+                    break;
+                case '*':
+                    result = prev * current;
+                    break;
+                case '/':
+                    if (current === 0) {
+                        currentInput = 'Error';
+                        operator = null;
+                        previousInput = null;
+                        updateDisplay();
+                        return;
+                    }
+                    result = prev / current;
+                    break;
+                case '%':
+                    result = prev % current;
+                    break;
+                default:
+                    return;
+            }
+
+            // Round to avoid floating point precision issues
+            result = Math.round(result * 100000000) / 100000000;
+
+            currentInput = result.toString();
+            operator = null;
+            previousInput = null;
+            waitingForNewInput = true;
+            updateDisplay();
+        }
+
+        function clearAll() {
+            currentInput = '0';
+            operator = null;
+            previousInput = null;
+            waitingForNewInput = false;
+            updateDisplay();
+        }
+
+        function clearEntry() {
+            currentInput = '0';
+            updateDisplay();
+        }
+
+        function toggleTheme() {
+            isLightTheme = !isLightTheme;
+
+            if (isLightTheme) {
+                calculator.classList.add("bg-white", "text-gray-800");
+                calculator.classList.remove("bg-[#202128]", "text-white");
+                themeIcon.src = "../images/light/dark-mode-icon.png";
+                display.classList.add("text-black");     // Update to light mode icon
+                display.classList.remove("text-white");
+                calc.classList.add("text-gray-800");
+                calc.classList.remove("text-white");
+            } else {
+                calculator.classList.add("bg-[#202128]", "text-white");
+                calculator.classList.remove("bg-white", "text-white");
+                themeIcon.src = "../images/light/light-mode-icon.png"; // Update to dark mode icon
+                display.classList.add("text-white");
+                display.classList.remove("text-black");
+                calc.classList.add("text-white");
+                calc.classList.remove("text-gray-800");
+            }
+        }
+
+        // Keyboard support
+        document.addEventListener('keydown', function (event) {
+            const key = event.key;
+
+            if (key >= '0' && key <= '9') {
+                appendNumber(key);
+            } else if (key === '.') {
+                appendNumber('.');
+            } else if (key === '+') {
+                appendOperator('+');
+            } else if (key === '-') {
+                appendOperator('-');
+            } else if (key === '*') {
+                appendOperator('*');
+            } else if (key === '/') {
+                event.preventDefault();
+                appendOperator('/');
+            } else if (key === '%') {
+                appendOperator('%');
+            } else if (key === 'Enter' || key === '=') {
+                calculate();
+            } else if (key === 'Escape') {
+                clearAll();
+            } else if (key === 'Backspace') {
+                clearEntry();
+            }
+        });
+
+        // Add button press animations
+        document.querySelectorAll('.calculator-btn').forEach(btn => {
+            btn.addEventListener('touchstart', function () {
+                this.style.transform = 'scale(0.95)';
+            });
+
+            btn.addEventListener('touchend', function () {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+        // Initialize
+        updateDisplay();
+    </script>
+</body>
+
+</html>

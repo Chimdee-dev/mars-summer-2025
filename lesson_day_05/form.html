@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson Day 5</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <h1>HTML, CSS Forms</h1>
+    <form>
+        <h2>Register from</h2>
+        <input type="text" placeholder="Username">
+        <br>
+        <input type="password" placeholder="Password">
+        <br>
+        <input type="email" placeholder="Email">
+        <br>
+    </form>
+    <form>
+        <h2>Optional</h2>
+        <label for="phone">Phone Number:</label>
+        <input type="number" name="phone" id="phone">
+        <br>
+        <label for="gender">Gender:</label>
+        <br>
+        <input type="radio" name="gender" id="male"> Male
+        <input type="radio" name="gender" id="female"> Female
+        <br>
+        <label for="app">Choose:</label>
+        <br>
+        <input type="checkbox" name="app" id="itunes"> iTunes
+        <br>
+        <br>
+        <input type="checkbox" name="app" id="lastfm"> iTunes
+        <br>
+        <br>
+        <input type="checkbox" name="app" id="spotify"> iTunes
+        <br>
+        <label for="genre">Genre</label>
+        <select name="genre" id="genre">
+            <option value="">Action</option>
+            <option value="">Comedy</option>
+            <option value="">Horror</option>
+            <option value="" selected>Kdrama</option>
+            <option value="">Jdrama</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Next">
+        <br>
+        <br>
+        <button>Send</button>
+        <br>
+    </form>
+    <br>
+    <fieldset>
+        <legend>Contact</legend>
+        <form action="">
+            <label for="email">Email</label>
+            <br>
+            <input type="email" required>
+            <br>
+            <label for="mobile">Mobile</label>
+            <br>
+            <input for="number"></input>
+            <br>
+            <label for="phone">Phone</label>
+            <br>
+            <input type="number">
+            <br>
+            <label for="date">Date:</label>
+            <br>
+            <input type="date">
+            <br>
+            <br>
+            <input type="search" placeholder="Search ...">
+            <br>
+            <br>
+            <label for="file">Upload:</label>
+            <br>
+            <input type="file">
+            <br>
+            <br>
+            <button>Send</button>
+        </form>
+    </fieldset>
+    <h1>CSS Forms</h1>
+    <fieldset class="register-form">
+        <legend>Register form</legend>
+        <form>
+            <div>
+                <label class="title">Name:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label class="title">Email:</label>
+                <input type="email">
+            </div>
+            <div>
+                <label class="title">Password:</label>
+                <input type="password">
+            </div>
+            <div>
+                <input type="submit" value="Register" class="register">
+            </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>

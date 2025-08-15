@@ -1,0 +1,52 @@
+.card {
+  width: 500px;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  display: flex;
+  margin: 30px auto;
+}
+
+.profile {
+  background-color: #7378ff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.profile div {
+  background-color: #9997ff;
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 10px; /* Optional: for spacing inside badges */
+  margin: 10px 0; /* Optional: for spacing between badges */
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more-info {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 65px;
+}
+
+.info {
+  flex-grow: 2;
+  padding: 20px;
+  background-color: #3884ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 0px 10px 10px 0;
+  border-left: 3px dotted #db005b;
+}
+
+.info h1 {
+  text-align: center;
+}

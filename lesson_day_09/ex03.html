@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.ex03.css">
+</head>
+<body>
+    <h1>Floating Exercises</h1>
+    <!-- Exercise 1: Basic Float Left -->
+    <div class="exercise">
+        <h2>Exercise 1: Basic Float Left</h2>
+        <p><strong>Concept:</strong> Understanding how float: left works</p>
+        <div class="demo-area">
+            <div class="ex1-box">This box is floated left</div>
+            <p>This text flows around the floated element. Notice how the text wraps around the red box that's floated to the left. This is the fundamental behavior of CSS float.</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <h1>Float </h1>
+    <!-- Exercise 2: Float Right -->
+    <div class="exercise">
+        <h2>Exercise 2: Float Right</h2>
+        <p><strong>Concept:</strong> Using float: right to position elements</p>
+        <div class="demo-area">
+            <div class="ex2-box">Floated Right</div>
+            <p>This paragraph demonstrates how text flows around a right-floated element. The teal box is positioned on the right side, and the text wraps around it on the left. Float right is commonly used for sidebars, images, and call-out boxes.</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <h1>Image float</h1>
+    <!-- Exercise 3: Image Float with Text Wrap -->
+    <div class="exercise">
+        <h2>Exercise 3: Image Float with Text Wrap</h2>
+        <p><strong>Concept:</strong> Classic use case - floating images within text content</p>
+        <div class="demo-area">
+            <div class="ex3-image"></div>
+            <p>This exercise simulates floating an image within a paragraph of text. The blue square represents an image that's floated to the left with appropriate margins. This creates the classic magazine-style layout where text flows around images naturally. Notice how the margin on the right and bottom of the "image" creates proper spacing between the floated element and the surrounding text content.</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- Exercise 4: Multiple Floated Elements -->
+    <div class="exercise">
+        <h2>Exercise 4: Multiple Floated Elements</h2>
+        <p><strong>Concept:</strong> How multiple floated elements behave together</p>
+        <div class="demo-area">
+            <div class="ex4-container clearfix">
+                <div class="ex4-box">Box 1</div>
+                <div class="ex4-box">Box 2</div>
+                <div class="ex4-box">Box 3</div>
+                <div class="ex4-box">Box 4</div>
+            </div>
+        </div>
+        <p>Multiple floated elements line up next to each other horizontally until they run out of space, then wrap to the next line.</p>
+    </div>
+   
+    <!-- Exercise 5: Clearfix Problem and Solution -->
+    <div class="exercise">
+        <h2>Exercise 5: Clearfix - Containing Floated Children</h2>
+        <p><strong>Concept:</strong> Understanding and solving the clearfix problem</p>
+        <div class="demo-area">
+            <div class="ex5-container">
+                <div class="ex5-floated">Floated Content</div>
+                <div class="ex5-floated">More Floated Content</div>
+            </div>
+        </div>
+        <p>The container above has a border and contains floated elements. Without clearfix, the container wouldn't expand to contain its floated children. The ::after pseudo-element clearfix solution makes the container properly wrap around its floated content.</p>
+    </div>
+    <!-- Exercise 6: Two Column Layout -->
+    <div class="exercise">
+        <h2>Exercise 6: Two Column Layout</h2>
+        <p><strong>Concept:</strong> Creating a sidebar and main content area</p>
+        <div class="demo-area">
+            <div class="ex6-sidebar">
+                <h3>Sidebar</h3>
+                <p>Navigation or supplementary content goes here.</p>
+            </div>
+            <div class="ex6-main">
+                <h3>Main Content</h3>
+                <p>This is the main content area. Notice how the left margin is set to accommodate the floated sidebar. This creates a clean two-column layout that was very common before flexbox and grid.</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+   
+    <!-- Exercise 7: Three Column Layout -->
+    <div class="exercise">
+        <h2>Exercise 7: Three Column Layout</h2>
+        <p><strong>Concept:</strong> Combining left float, right float, and margins</p>
+        <div class="demo-area">
+            <div class="ex7-left">Left Sidebar</div>
+            <div class="ex7-right">Right Sidebar</div>
+            <div class="ex7-center">
+                <h3>Center Content</h3>
+                <p>This center column has margins on both sides to accommodate the floated sidebars. This creates a classic three-column layout structure.</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+   
+    <!-- Exercise 8: Float Issues with Different Heights -->
+    <div class="exercise">
+        <h2>Exercise 8: Float Issues with Different Heights</h2>
+        <p><strong>Concept:</strong> Understanding how different heights affect float behavior</p>
+        <div class="demo-area">
+            <div class="ex8-container clearfix">
+                <div class="ex8-box">Box 1<br>Short</div>
+                <div class="ex8-box">Box 2<br>Medium<br>Height</div>
+                <div class="ex8-box">Box 3<br>Tall</div>
+                <div class="ex8-box">Box 4<br>Different<br>Height</div>
+                <div class="ex8-box">Box 5<br>Various</div>
+            </div>
+        </div>
+        <p>Notice how boxes with different heights can cause unexpected wrapping behavior. This demonstrates why float-based layouts can be tricky for complex designs.</p>
+    </div>
+   
+    <!-- Exercise 9: Navigation Bar with Floated Elements -->
+    <div class="exercise">
+        <h2>Exercise 9: Horizontal Navigation with Float</h2>
+        <p><strong>Concept:</strong> Creating navigation menus using floated list items</p>
+        <div class="demo-area">
+            <ul class="ex9-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="right"><a href="#">Login</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <p>This navigation bar uses floated list items to create a horizontal menu, with some items floated left and others floated right.</p>
+    </div>
+   
+    <!-- Exercise 10: Complex Layout with Nested Floats -->
+    <div class="exercise">
+        <h2>Exercise 10: Complex Layout - Nested Floats</h2>
+        <p><strong>Concept:</strong> Combining multiple float techniques in a complete layout</p>
+        <div class="demo-area">
+            <div class="ex10-header">
+                <h2>Website Header</h2>
+            </div>
+            <div class="ex10-content">
+                <div class="ex10-sidebar">
+                    <h3>Sidebar</h3>
+                    <p>Navigation and supplementary content.</p>
+                </div>
+                <div class="ex10-main">
+                    <div class="ex10-article">
+                        <h4>Article 1</h4>
+                        <p>First article content with floated layout.</p>
+                    </div>
+                    <div class="ex10-article">
+                        <h4>Article 2</h4>
+                        <p>Second article content side by side.</p>
+                    </div>
+                    <div class="ex10-article">
+                        <h4>Article 3</h4>
+                        <p>Third article in the grid layout.</p>
+                    </div>
+                    <div class="ex10-article">
+                        <h4>Article 4</h4>
+                        <p>Fourth article completing the grid.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ex10-footer">
+                <p>Footer Content - Always at the Bottom</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+body{
+    background-color: blanchedalmond;
+}
+h1::after {
+    content: "small => 576px";
+}

@@ -1,0 +1,36 @@
+div.box { 
+    width: 200px;
+    height: 200px;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+
+
+/* left center right elementuudiig nerniih ni daguu float ashiglan daraarlluulan hundlun bairshuulna */
+#left {
+    float: left;
+    
+}
+#center {
+    float: left;
+    margin-left: 30%;
+}
+#right {
+    float: right;
+    
+}
+#floating-box::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.flex-box{
+    background-color: aqua;
+}
+
+#flex-box-container {
+    display: flex;
+    justify-content: space-between;
+}
+

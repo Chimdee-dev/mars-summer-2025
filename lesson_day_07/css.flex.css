@@ -1,0 +1,80 @@
+.container-1 div{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border: 1px solid plum;
+
+}
+.container-1{
+    width: 600px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    /* gap: 30px; */
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-direction: column; */
+    
+}
+.container-2 div{
+    width: 100px;
+    height: 100px;
+    background-color: lightcyan;
+    border: 1px solid blue;
+}
+.container-2 {
+    width: 400px;
+    height: 400px;
+    background-color: lightgreen;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    align-content: center;
+    gap: 10px 20px ;
+}
+.container-3 div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(251, 151, 210);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.container-3 {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-content:space-around ;
+    gap: 10px 20px ;
+    border: 1px solid black;
+    
+}
+.container-3 div:first-child{
+    background-color: yellow;
+    order: 0;
+}
+.container-3 div:nth-child(4n){
+    background-color: aquamarine;
+    order: -1;
+}
+.container-4 {
+    background-color: lightcyan;
+    border: 1px solid blue;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    width: 500px;
+    height: 500px;
+    align-items: end;
+}
+.container-4 h1, .container-4 p {
+    background-color: lightgreen;
+}
+.container-4 h1 {
+    align-self: self-start;
+}
+.container-4 p:nth-child(2n) {
+    align-self: center;
+}

@@ -1,0 +1,237 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+.exercise {
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+.exercise h2 {
+    color: #333;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 10px;
+}
+.demo-area {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+/*exercise 01: Basic Float Left */
+
+
+.ex1-box {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    float: left;
+
+}
+.ex2-box {
+    width: 150px;
+    height: 80px;
+    background-color: rgb(74, 74, 255);
+    color: white;
+    padding: 15px;
+    float: right;
+
+}
+.ex3-image {
+    width: 120px;
+    height: 120px;
+    background-color: #45b608;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+.ex4-container {
+    width: 100%;
+}
+.ex4-box {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    color: white;
+
+}
+.ex4-box:nth-child(1){
+    background: red;
+}
+.ex4-box:nth-child(2){
+    background: rgb(96, 80, 80);
+}
+.ex4-box:nth-child(3){
+    background: rgb(197, 35, 35);
+}
+.ex4-box:nth-child(4){
+    background: rgb(136, 136, 136);
+}
+.ex5-container {
+    border: 2px solid #333;
+
+}
+.ex5-container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.ex5-floated {
+    width: 200px;
+    height: 100px;
+    background: #a66;
+    color: white;
+    padding: 20px;
+    float: left;
+    margin: 10px;
+}
+/* exercise 6 : two color layout */
+.ex6-sidebar {
+    width: 200px;
+    background-color: #26de81;
+    color: white;
+    padding: 20px;
+    height: 300px;
+    float: left;
+
+}
+.ex6-main {
+    background-color: rgb(236, 189, 97);
+    padding: 20px;
+    height: 280px;
+    margin-left: 250px;
+
+}
+.ex7-left {
+    background-color: pink;
+    color: rgb(141, 79, 79);
+    padding: 15px;
+    height: 200px;
+    float: left;
+    width: 200px;
+}
+
+.ex7-center {
+    background-color: #26de81;
+    color: rgb(255, 139, 139);
+    padding: 15px;
+    height: 170px; 
+    margin-left: 230px;
+}
+.ex7-right {
+    background-color: #007acc;
+    color: rgb(80, 255, 243);
+    padding: 15px;
+    height: 200px;
+    width: 200px;
+    float: right;
+}
+.ex8-container {
+    width: 100%;
+}
+.ex8-box {
+    margin: 10px;
+    padding: 15px;
+    background: rgb(199, 138, 138);
+    color: white;
+    float: left;
+    text-align: center;
+    width: 80px;
+
+}
+.ex8-box:nth-child(1){
+    height: 100px;
+}
+.ex8-box:nth-child(2){
+    height: 120px;
+}
+.ex8-box:nth-child(3){
+    height: 90px;
+}
+.ex8-box:nth-child(4){
+    height: 120px;
+}
+.ex8-box:nth-child(5){
+    height: 80px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ex9-nav {
+    background-color: #2d3436;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.ex9-nav li {
+    float: left;
+}
+
+.ex9-nav a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+  
+}
+.ex9-nav a:hover {
+    background: #636e72;
+}
+.ex9-nav .right {
+    float: right;
+}
+/* .clear {
+    clear: both;
+} */
+.ex10-header{
+    background: #74b9ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.ex10-content {
+    overflow: hidden;
+} 
+.ex10-sidebar{
+    width: 200px;
+    background: #fd79a8;
+    color: white;
+    padding: 20px;
+    min-height: 300px;
+    float:left;
+}
+.ex10-main {
+    padding: 20px;
+}
+.ex10-article {
+    background: #55a4ff;
+    color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-right: 10%;
+    width: 45%;
+    margin-right: 0;
+    float: left;
+}
+.ex10-article:nth-child(even) {
+    float: right;
+    margin-right: 0;
+}
+.ex10-footer{
+    background: #2d3436;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

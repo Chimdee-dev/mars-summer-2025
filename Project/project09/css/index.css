@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(220, 208, 220);
+    width: 1280px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#Open>div {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+}
+
+#Open>div img {
+    width: 60px;
+    height: auto;
+}
+
+#Open>div .counter {
+    position: absolute;
+    top: 66px;
+    left: 30px;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 7px;
+    font-size: 20px;
+    min-width: 20px;
+    text-align: center;
+}
+
+
+#Open {
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(141, 51, 141);
+    color: white;
+}
+
+#Instagram img {
+    display: inline-block;
+    justify-content: center;
+}

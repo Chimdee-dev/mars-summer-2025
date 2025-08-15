@@ -1,0 +1,349 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    margin: 20px;
+    line-height: 1.6;
+}
+
+.exercise {
+    margin-bottom: 60px;
+    padding: 20px;
+    border: 2px solid #ddd;
+}
+
+.exercise h2 {
+    color: #333;
+    border-bottom: 2px solid #007;
+    padding-bottom: 10px;
+}
+
+.demo-area {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.highlight {
+    background: yellow;
+    padding: 2px 4px;
+    border-radius: 3px;
+
+}
+
+.note {
+    background-color: rgb(205, 205, 255);
+    padding: 15px;
+    border-left: 4px solid #2196f3;
+}
+
+/* Exercises */
+/* Exercise 1: Static Position (defualt) */
+.ex1-box {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 161, 161);
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    position: static;
+}
+
+/* Exercise 2 relative position */
+.ex2-box {
+    width: 150px;
+    height: 80px;
+    background: #4ecdc4;
+    color: white;
+    padding: 15px;
+    margin: 20px;
+    position: relative;
+    left: 50%;
+    top: 30px;
+}
+
+.ex2-reference {
+    width: 150px;
+    height: 80px;
+    background: #ddd;
+    padding: 15px;
+    margin: 20px;
+    opacity: 0.5;
+    border: 2px solid #4ecdc4;
+}
+
+.ex3-container {
+    position: relative;
+    height: 200px;
+    background: rgb(251, 220, 220);
+    border: 2px solid #4ecdc4;
+}
+
+.ex3-box {
+    width: 120px;
+    height: 80px;
+    background: #133d3a;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+/* Exercise 4 Fixed Position  */
+.ex4-fixed {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    height: 60px;
+    background: #f7b731;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+/* Exercise 5: position sticky */
+.ex5-container {
+    height: 300px;
+    overflow-y: scroll;
+    border: 2px solid #a55eea;
+}
+
+.ex5-sticky {
+    position: sticky;
+    top: 0;
+    background: #a55eea;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+.ex5-content {
+    padding: 20px;
+    height: 500px;
+}
+
+/* exercise 6; centering with absolute position */
+.ex6-container {
+    position: relative;
+    height: 200px;
+    background: #fd79a8;
+    border-radius: 10px;
+}
+
+.ex6-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: #fd79a8;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* exercise 7  z-index */
+.ex7-container {
+    position: relative;
+    height: 300px;
+
+}
+
+.ex7-box {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.ex7-box1 {
+    background: rebeccapurple;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+
+.ex7-box2 {
+    background: rgb(161, 139, 184);
+    top: 80px;
+    left: 80px;
+    z-index: 3;
+    opacity: 0.5;
+}
+
+.ex7-box3 {
+    background: rgb(117, 117, 117);
+    top: 110px;
+    left: 110px;
+    z-index: 2;
+}
+
+/* exercise 8 javascirpt creating modal  */
+.ex8-modal-trigger {
+    background-color: #34a3ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.ex8-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba;
+    display: none;
+    z-index: 1000;
+}
+
+.ex8-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+}
+
+.ex8-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* exercise 9 tooltip with position with Positioning */
+.ex9-tooltip-container {
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+}
+
+.ex9-trigger {
+    background: #6c5ce7;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ex9-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgb(171, 171, 171);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3, visibility 0.3s;
+    z-index: 1000;
+}
+
+.ex9-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 5px solid transparent;
+    border-top-color: #2d3436;
+}
+
+.ex9-tooltip-container:hover .ex9-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* exercise 10 complex layout with mixed positioning */
+.ex10-layout {
+    position: relative;
+    height: 400px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+
+.ex10-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #495057;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 2px;
+}
+
+.ex10-sidebar {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    bottom: 50px;
+    background: #6c757d;
+    color: white;
+    padding: 20px;
+}
+
+.ex10-main {
+    position: absolute;
+    top: 60px;
+    left: 200px;
+    right: 0;
+    bottom: 50px;
+    background: white;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.ex10-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: #343a40;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.ex10-floating-btn{
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+    z-index: 1000;
+}
