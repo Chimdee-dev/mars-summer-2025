@@ -2,13 +2,20 @@ import React from 'react'
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { FaRegUser } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
+import { useNavigate } from 'react-router-dom';
+
 
 export const Header = () => {
+  const navigate = useNavigate();
   return (
     <nav className="flex flex-col md:flex-row md:justify-between items-center m-4 md:m-10 gap-4">
       {/* Logo */}
-      <div>
-        <img src="images/logo.svg" alt="logo" className="w-[120px] md:w-[150px]" />
+      <div onClick={() => navigate("/")} className="cursor-pointer">
+        <img
+          src="images/logo.svg"
+          alt="logo"
+          className="w-[120px] md:w-[150px]"
+        />
       </div>
 
       {/* Search */}
@@ -23,10 +30,15 @@ export const Header = () => {
 
       {/* Icons */}
       <div className="flex">
-        <button className="w-[24px] h-[24px]">
+        <button className="w-[24px] h-[24px]"
+          onClick={() => navigate('/login')} // ← login page руу шилжүүлнэ
+        >
           <FaRegUser />
         </button>
-        <button className="w-[24px] h-[24px] ml-5">
+
+        <button className="w-[24px] h-[24px] ml-5"
+          onClick={() => navigate('/checkout')} // ← checkout page руу шилжүүлнэ
+        >
           <RiShoppingCart2Line />
         </button>
       </div>
