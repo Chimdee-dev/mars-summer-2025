@@ -110,7 +110,7 @@ html {
 }
 
 .split-left {
-    background-image: url(/Project/project10/images/playsa.avif);
+    background-image: url(../images/playsa.avif);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
